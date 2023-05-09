@@ -1,0 +1,65 @@
+
+header {
+  @apply flex items-center gap-4 justify-between sticky top-0 left-0 z-10 bg-pbr-darkpurple py-2
+}
+
+
+header .search {
+  @apply relative rounded-md bg-pbr-purple border-none flex justify-start items-center h-[32px];
+  flex: 1
+}
+
+header .navlinks {
+  @apply flex justify-center items-center text-[16px] font-medium
+}
+
+header .navlinks a {
+  @apply px-3 py-1
+}
+
+header .logo {
+  @apply flex justify-start items-center gap-2 w-[157px]
+}
+
+header .logo h1 {
+  @apply text-lg font-medium;
+}
+
+header .logo img {
+  @apply w-8 h-8 rounded-full
+}
+
+header .hamburger {
+  @apply hidden text-white
+}
+
+@media screen and (max-width: 1024px) { 
+}
+
+@media screen and (max-width: 876px) {
+  header .navlinks, header .logo h1 {
+    display: none;
+  }
+  
+  header .hamburger {
+    @apply flex p-1
+  }
+
+  header .logo {
+    @apply min-w-[32px] w-[32px]
+  }
+
+  header .logo img {
+    @apply w-full
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) { 
+}
+
+@media screen and (max-width: 420px) {}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {}

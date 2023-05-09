@@ -1,0 +1,22 @@
+footer {
+  @apply flex flex-col items-center w-full gap-2
+}
+footer .copyright {
+  @apply flex items-center gap-1
+}
+
+@media screen and (max-width: 1024px) { 
+}
+
+@media screen and (max-width: 876px) { 
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) { 
+}
+
+@media screen and (max-width: 420px) {}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('../styles/header.css');
+@import url('../styles/footer.css');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply font-pbr bg-pbr-darkpurple text-white p-4
+}
+
+.center {
+  @apply w-full max-w-[1366px] mx-auto
+}
+
+h2,h3 {
+  @apply font-medium my-4
+}
+
+h2 {
+  @apply text-3xl mt-0
+}
+
+h3 {
+  @apply text-xl mb-0
+}
+
+main {
+  @apply py-4
+}
+
+.terms {
+  @apply max-w-[872px] mx-auto
+}
