@@ -7,3 +7,6 @@ delete branch remotely: git push --delete origin <branch_name>
 
 rebase new branch into main:
 - inside main branch do this: git rebase <branch_name>
+
+react-firebase-hooks
+react-firebaseui
