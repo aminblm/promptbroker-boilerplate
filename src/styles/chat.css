@@ -1,0 +1,10 @@
+
+
+.chat-main {
+    @apply flex flex-col h-[30rem] justify-center items-center
+}
+
+
+.chat-main h2 {
+    text-align: center!important;
+}
