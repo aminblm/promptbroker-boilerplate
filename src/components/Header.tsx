@@ -4,10 +4,12 @@ import Link from "next/link";
 export default function Header() { 
   return (
     <header>
+      <div className="logo-container">
       <Link href="/" className="logo">
         <img className="rounded-full" src="/logo.png" alt={"PromptBase"} />
         <h1 className="logoname">PromptBroker</h1>
       </Link>
+      </div>
       <div className="search">
         <input type="text" name="searchPrompts" placeholder="Search Prompts" className="outline-none bg-pbr-purple flex-grow rounded-tl-md rounded-bl-md border-none px-4 py-1" />
         <button className="bg-white rounded-tr-md rounded-br-md h-full px-2">

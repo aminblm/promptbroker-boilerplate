@@ -1,0 +1,287 @@
+::-webkit-scrollbar{
+    display: none;
+}
+h2{
+    font-family: Arial, Helvetica, serif;
+    background: linear-gradient(to right, #f36e21, #c9ff08, #23cfaa, #449cee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    word-spacing: auto;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+h1{
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+a{
+    border: 1px solid white;
+    padding: 0.5rem;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.hero-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-left span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+}
+
+.hero-left span .findPrompt{
+    background-color: white;
+    color: black;
+}
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured-logo{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+.featured-prompt a{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.featuredprompt-text{
+    display: flex;
+    justify-self: start;
+    align-self: start;
+    padding: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.prompts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.prompt{
+    background-color: rgb(54, 64, 88);
+    height: 30vh;
+    width: 40%;
+    border-radius: 5px;
+}
+.prompt img{
+    width: 100%;
+    height: 100%;
+}
+
+.featured a{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.about span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 0.4rem;
+    align-items: center;
+}
+.about span h3, .about span h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.prompt-market{
+    margin-top: 3rem;
+}
+.promptmarket-text h1{
+    font-size: 1rem;
+}
+.sell-prompt h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.sell-prompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.sell-prompt a{
+    width: 70%;
+    padding: 0.2rem;
+    margin-top: 2rem;
+}
+.market{
+    padding: 0.5rem;
+}
+
+.image-prompt span h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.image-prompt span h3{
+    font-size: 2rem;
+    margin-top: 0;
+}
+.otherpages a, .best-prompts a{
+    border: none;
+    font-size: 1rem;
+}
+.best-prompts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.search{
+    width: 30%;
+    margin-left: -3%;
+}
+header .navlinks a{
+    border: none;
+    font-size: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+.logo{
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width: 876.5px) {
+    header .logo-container{
+        margin-left: -5%;
+        display: flex;
+        align-items: center;
+    }
+    header .search{
+        margin-left: 5%;
+    }
+    .hero-left span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-left span a{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .body-container .market{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .image-prompt span{
+        display: flex;
+        flex-direction: row;
+    }
+    .body-container .featured-prompt a{
+        display: flex;
+        align-self: center;
+        position: relative;
+        left:30%;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .hero-left h2, .hero-left h3{
+        text-align: start;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .hero-right{
+        width: 60%;
+        display: flex;
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-left{
+        display: flex;
+        width: 60%;
+        margin-top: -5rem;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .hero-promptcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hero-promptcontainer .hero-prompt{
+        height: 20vh;
+        width: 45%;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+        background-color: rgb(74, 73, 100);
+    }
+    .hero-prompt img{
+        width: 100%;
+        height: 100%;
+    }
+}
