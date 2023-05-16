@@ -1,4 +1,3 @@
-
 "use client"
 
 import PromptCard from "@/components/PromptCard"
@@ -6,9 +5,9 @@ import { mockPrompts } from "@/mock/data"
 import { iPrompt } from "@/types"
 import { useEffect, useState } from "react"
 
-export const metadata = {
-  title: "Marketplace"
-}
+// export const metadata = {
+//   title: "Marketplace"
+// }
 
 export default function Marketplace() {
   const [prompts, setPrompts] = useState<iPrompt[]>([])
@@ -21,7 +20,6 @@ export default function Marketplace() {
   return (
     <div className="marketplace">
       <div className="filters">
-
       </div>
       <div className="grid">
         {
