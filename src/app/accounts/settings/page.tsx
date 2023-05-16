@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Settings() {
   return (
-    <div className="mx-12">
+    <div className="sm:mx-12 mx-2">
       <div>
         <h3 className="text-4xl py-3">Settings</h3>
         <hr className="bg-white" />
@@ -19,14 +19,14 @@ export default function Settings() {
           </p>
           <div className="flex">
             <div className="flex items-center mr-2">
-              <span className="text-3xl font-bold mr-8">@</span>
+              <span className="text-3xl font-bold mr-3">@</span>
               <input
                 type="text"
                 maxLength={20}
                 pattern="[a-zA-Z0-9-]+"
                 className="inline-flex items-center justify-center h-10 px-4 py-2 text-base font-medium
-                 text-white border border-transparent rounded-md shadow-sm bg-gray-600
-                  hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                 text-white border border-transparent rounded-md shadow-sm bg-gray-700
+                 focus:outline-none"
               />
             </div>
           </div>
@@ -119,12 +119,7 @@ export default function Settings() {
                   <span className="checkmark"></span>
                 </label>
               </td>
-              <td>
-                <label>
-                  <input type="checkbox" className="w-5 h-5" />
-                  <span className="checkmark"></span>
-                </label>
-              </td>
+              <td></td>
             </tr>
 
             <tr className="border-b border-solid border-gray-700">
@@ -185,12 +180,7 @@ export default function Settings() {
                   <span className="checkmark"></span>
                 </label>
               </td>
-              <td>
-                <label>
-                  <input type="checkbox" className="w-5 h-5" />
-                  <span className="checkmark"></span>
-                </label>
-              </td>
+              <td></td>
             </tr>
 
             <tr className="border-b border-solid border-gray-700">
@@ -274,12 +264,7 @@ export default function Settings() {
                   </i>
                 </div>
               </td>
-              <td className="w-200 px-2">
-                <label className="">
-                  <input type="checkbox" className="w-5 h-5" />
-                  <span className="checkmark"></span>
-                </label>
-              </td>
+              <td className="w-200 px-2"></td>
               <td>
                 <label>
                   <input type="checkbox" className="w-5 h-5" />
@@ -300,12 +285,7 @@ export default function Settings() {
                   </i>
                 </div>
               </td>
-              <td className="w-200 px-2">
-                <label className="">
-                  <input type="checkbox" className="w-5 h-5" />
-                  <span className="checkmark"></span>
-                </label>
-              </td>
+              <td className="w-200 px-2"></td>
               <td>
                 <label>
                   <input type="checkbox" className="w-5 h-5" />
@@ -326,12 +306,7 @@ export default function Settings() {
                   </i>
                 </div>
               </td>
-              <td className="w-200 px-2">
-                <label className="">
-                  <input type="checkbox" className="w-5 h-5" />
-                  <span className="checkmark"></span>
-                </label>
-              </td>
+              <td className="w-200 px-2"></td>
               <td>
                 <label>
                   <input type="checkbox" className="w-5 h-5" />
@@ -352,12 +327,7 @@ export default function Settings() {
                   </i>
                 </div>
               </td>
-              <td className="w-200 px-2">
-                <label className="">
-                  <input type="checkbox" className="w-5 h-5" />
-                  <span className="checkmark"></span>
-                </label>
-              </td>
+              <td className="w-200 px-2"></td>
               <td>
                 <label>
                   <input type="checkbox" className="w-5 h-5" />
@@ -370,7 +340,7 @@ export default function Settings() {
       </div>
 
       <div>
-        <button className="border border-white text-white font-medium text-lg mt-[5%] inline-flex items-center rounded-md px-8 py-2 cursor-pointer transition-opacity duration-300 ease">
+        <button className="border border-white text-white font-medium text-2xl mt-[5%] inline-flex items-center rounded-md px-8 py-2 cursor-pointer transition-opacity duration-300 ease">
           Logout
         </button>
       </div>
