@@ -4,7 +4,6 @@
 @import url('../styles/chat.css');
 @import url('../styles/marketplace.css');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
