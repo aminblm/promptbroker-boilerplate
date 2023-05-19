@@ -2,7 +2,7 @@
 @import url('../styles/header.css');
 @import url('../styles/footer.css');
 @import url('../styles/chat.css');
-
+@import url('../styles/marketplace.css');
 
 @tailwind base;
 @tailwind components;
