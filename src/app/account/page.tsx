@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "Favourites",
+  title: "Favorites",
 };
 import Link from "next/link";
 
 // When the user logs in, we have the accounts page
 
-export default function Favourites() {
+export default function Favorites() {
   return (
     <>
-      <div className="">Favourite</div>
+      <div className="">Favorite</div>
     </>
   );
 }
