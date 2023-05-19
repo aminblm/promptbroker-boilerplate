@@ -27,7 +27,7 @@ body {
 }
 
 .center {
-  @apply w-full max-w-[1366px] mx-auto
+  @apply w-full max-w-[1366px] mx-auto;
 }
 
 h2,h3 {

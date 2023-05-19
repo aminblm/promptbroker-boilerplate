@@ -15,7 +15,7 @@
     flex: 1;
     background-color:#222236;
     border-top: 2px solid #393954;
-    height: calc(100% - 64px);
+    height: calc(100% - 45px)!important;
     padding: 1em;
     margin: 0 -1em;
 }
@@ -24,7 +24,7 @@
     border-right: 2px solid #393954;
     height: 100%;
     overflow-y: auto;
-    padding: -0em 1em;
+    padding: 0 1em;
     margin: -1em -1em;
 }
 
@@ -45,7 +45,7 @@
 
 }
 
-.timestamp {
+.timestamp{
     @apply absolute right-0
 }
 
@@ -61,4 +61,55 @@
 
 .conversation-outer-wrapper:hover{
     background-color: #393954!important; 
+}
+
+
+/* ---------------------------Message pane-------------------------- */
+
+.message-pane-main {
+    @apply flex-1 flex-col h-full;
+}
+
+.chat-header {
+   @apply h-16 p-8 flex relative items-center;
+   box-shadow: 0 2px 3px 0 rgb(0 0 0 / 40%);
+   padding: 0em 0em;
+   margin: -1em -1em;
+}
+
+.chat-header-left {
+   @apply h-full relative flex items-center
+}
+
+.chat-header-back-arrow {
+    @apply mr-1 h-8 pl-2;
+    color: white!important;
+    cursor: pointer
+}
+
+.chat-header-profile {
+    @apply h-16 p-4 flex relative items-center;
+}
+
+.chat-header-profile img{
+    @apply w-12 h-12 rounded-full mr-4;
+    cursor: pointer; 
+}
+
+.chat-header-username{ 
+    display: inline-block;
+    font-weight: 700;
+}
+.chat-header-info {
+    @apply absolute right-0 h-8 pr-2;
+    cursor: pointer;
+    color: white;
+
+}
+
+@media screen and (min-width: 1000px) { 
+    .last-message{
+        color: red;
+
+    }
 }
