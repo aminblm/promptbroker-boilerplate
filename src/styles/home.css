@@ -44,6 +44,7 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .hero-left span{
@@ -65,11 +66,31 @@ a{
     flex-direction: column;
     justify-content: center;
 }
+.featured .browse-market{
+    width: 40%;
+    display: flex;
+    position: relative;
+    left: 30%;
+    font-size: 1.2rem;
+}
 .featured-logo{
     display: flex;
-    flex-direction: row;
-    align-self: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
+}
+.featured-logo .featured-logo-image{
+    height: 1rem;
+    width: 6rem;
+    margin-bottom: 0.5rem;
+}
+.featured-logo-image img{
+    height: 100%;
+    width: 100%;
+    filter: invert(50%) brightness(120%);
 }
 .featured-prompt a{
     display: flex;
@@ -93,17 +114,119 @@ a{
     align-items: center;
     margin-bottom: 2rem;
 }
+.hero-prompt img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
 .prompt{
     background-color: rgb(54, 64, 88);
     height: 30vh;
-    width: 40%;
+    width: 15vh;
     border-radius: 5px;
 }
 .prompt img{
-    width: 100%;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
-
+.ai-tag1{
+    z-index: 1;
+    position: relative;
+    top: -79%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.ai-tag{
+    z-index: 1;
+    position: relative;
+    top: -96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nameTag1{
+    z-index: 1;
+    position: relative;
+    top: -30%;
+}
+.nameTag{
+    z-index: 1;
+    position: relative;
+    top: -28%;
+}
+.ai-tag h6,  .nameTag h6{
+    font-size: 0.9rem
+}
+.ai-tag span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    gap: 0.5rem;
+    width: 90%;
+    background-color: rgb(22, 22, 22);
+}
+.ai-tag1 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    gap: 0.5rem;
+    width: 40%;
+    background-color: rgb(22, 22, 22);
+}
+.nameTag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    gap: 0.5rem;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.nameTag1{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    height: 8vh;
+    text-align: left;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.ai-tag span img{
+    width: 20%;
+    height: 50%;
+}
+.ai-tag1 span img{
+    width: 15%;
+    height: 40%;
+}
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right .hero-prompt{
+    display: none;
+}
 .featured a{
     background-color: white;
     color: black;
@@ -148,12 +271,14 @@ p{
     margin-top: 4rem;
 }
 .sell-prompt a{
-    width: 70%;
+    width: 30%;
     padding: 0.2rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
 }
 .market{
     padding: 0.5rem;
+    width: 50%;
 }
 
 .image-prompt span h2{
@@ -257,6 +382,10 @@ header{
         align-items: center;
         justify-content: center;
     }
+    .hero-right .hero-prompt{
+        display: flex;
+        flex-direction: column;
+    }
     .hero-left{
         display: flex;
         width: 60%;
@@ -274,7 +403,7 @@ header{
         align-items: center;
     }
     .hero-promptcontainer .hero-prompt{
-        height: 20vh;
+        height: 22vh;
         width: 45%;
         margin-bottom: 2rem;
         border-radius: 6px;
