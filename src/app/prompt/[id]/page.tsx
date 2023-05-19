@@ -1,7 +1,7 @@
 "use client"
-export const metadata = {
-  title: "Sell"
-}
+// export const metadata = {
+//   title: "Sell"
+// }
 
 export default function Prompt() {
   return (

@@ -6,9 +6,9 @@ import { mockPrompts } from "@/mock/data"
 import { iPrompt } from "@/types"
 import { useEffect, useState } from "react"
 
-export const metadata = {
-  title: "Marketplace"
-}
+// export const metadata = {
+//   title: "Marketplace"
+// }
 
 export default function Marketplace() {
   const [prompts, setPrompts] = useState<iPrompt[]>([])
