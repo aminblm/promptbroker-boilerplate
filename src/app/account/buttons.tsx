@@ -1,3 +1,7 @@
+"use client";
+import open from "../../../public/home/open_new_window.svg";
+import Image from "next/image";
+
 export default function Buttons() {
   return (
     <div className="flex flex-col-reverse sm:flex-row justify-between mx-2 sm:mx-12">
@@ -27,13 +31,20 @@ export default function Buttons() {
           Settings
         </button>
       </div>
-      <div className="mb-7 sm:mb-0">
+      <div className="flex mb-7 sm:mb-0">
         <button className="bg-white text-gray-700 rounded-md text-sm font-semibold py-1 px-2 ml-3">
-            Stripe Dashboard
-          </button>
-        <button className="bg-white text-gray-700 rounded-md text-sm font-semibold py-1 px-2 ml-3">
-          Public Profile
+          Stripe Dashboard
         </button>
+        <div className="inline-flex relative">
+          <button className="bg-white w-full text-gray-700 rounded-md text-sm font-semibold py-1 px-2 ml-3">
+            Public Profile
+          </button>
+          <Image
+            className="absolute inset-y-0 right-0 h-4 filter invert-12 sepia-28 saturate-806 hue-rotate-201 brightness-90 contrast-93 ml-1"
+            src={open}
+            alt="open new window"
+          />
+        </div>
       </div>
     </div>
   );

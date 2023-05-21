@@ -1,14 +1,22 @@
+"use client";
+import { useRouter } from "next/router";
+import Settings from "./settings/page";
+import FavoritesPage from "./favorites/page";
+
 export const metadata = {
   title: "Favorites",
 };
-import Link from "next/link";
-
-// When the user logs in, we have the accounts page
 
 export default function Favorites() {
-  return (
-    <>
-      <div className="">Favorite</div>
-    </>
-  );
+  const router = useRouter();
+  const { view } = router.query;
+  let content;
+
+  if (view === "settings") {
+    content = <Settings />;
+  } else if (view === "favorites") {
+    content = <FavoritesPage />;
+  }
+
+  return <>{content}</>;
 }
