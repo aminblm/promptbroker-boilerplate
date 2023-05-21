@@ -20,13 +20,14 @@ export default function MessagePane(){
                 <div className="message-content-wrapper">
                     <div className="message-content">
                         <div className="message">
-                            <div className="block"></div>
-                            <div className="block">
+                            <div className="">
+                            </div>
+                            <div className="">
                                 <div className="message-bubble">
                                     <span className="message-text">
                                         Hello World
                                     </span>
-                                    <span className="message-timestap-wrap">
+                                    <span className="message-timestamp-wrapper">
                                             <span className="message-timestamp">
                                                 11:12pm
                                             </span>
@@ -38,22 +39,34 @@ export default function MessagePane(){
                 </div>
 
                 <div className="message-content-wrapper">
-                    <div className="sent-message">
-                        <div className="block"></div>
-                        <div className="message-content">
-                            <div className="message-bubble">
-                                <span className="message-text">
-                                    Hi
-                                </span>
-                                <span className="message-timestap-wrap">
-                                        <span className="message-timestamp">
-                                            11:12pm
-                                        </span>
+                    <div className="date-separator">
+                        <span>
+                            May 15, 2023
+                        </span>
+                    </div>
+                    <div>
+                        <div className="sent-message">
+                            <div ></div>
+                            <div className="message-content">
+                                <div className="message-bubble">
+                                    <span className="message-text">
+                                    lorem ipsum dolore
                                     </span>
+                                    <span className="message-timestamp-wrapper">
+                                            <span className="message-timestamp">
+                                                11:12pm
+                                            </span>
+                                            <span >
+                                                <img src="double_check_thick.svg" alt="read status" className="read-status-icon"/>
+                                            </span>
+                                        </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
             </div>
 
             <div className="message-box-main">

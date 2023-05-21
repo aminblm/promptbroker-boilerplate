@@ -23,7 +23,8 @@
 }
 
 body {
-  @apply font-pbr bg-pbr-darkpurple text-white p-4
+  @apply font-pbr bg-pbr-darkpurple text-white p-4;
+  overflow: hidden;
 }
 
 .center {
