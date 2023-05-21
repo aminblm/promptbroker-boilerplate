@@ -16,7 +16,42 @@ export default function MessagePane(){
                 </div>
                 <img className="chat-header-info" src="https://promptbase.com/assets/icons/info.svg" alt="" />
             </div>
-            <div className="message">
+            <div className="messages-main-wrapper">
+                <div className="message-content-wrapper">
+                    <div className="message-content">
+                        <div className="message-bubble">
+                            <span className="message-text sent">
+                                Hello World
+                            </span>
+                            <span className="message-timestap-wrap">
+                                    <span className="message-timestamp">
+                                        11:12pm
+                                    </span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="message-content-wrapper">
+                    <div className="recieved-message">
+
+                        <div className="message-content">
+
+                            <div className="message-bubble">
+                                <span className="message-text">
+                                    Hi
+                                </span>
+                                <span className="message-timestap-wrap">
+                                        <span className="message-timestamp">
+                                            11:12pm
+                                        </span>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
     )
