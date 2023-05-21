@@ -82,9 +82,8 @@
 }
 
 .chat-header-back-arrow {
-    @apply mr-1 h-8 pl-2;
-    color: white!important;
-    cursor: pointer
+    @apply mr-1 h-8 pl-2 cursor-pointer;
+    filter: invert(1);
 }
 
 .chat-header-profile {
@@ -101,9 +100,9 @@
     font-weight: 700;
 }
 .chat-header-info {
-    @apply absolute right-0 h-8 pr-2;
-    cursor: pointer;
-    color: white;
+    @apply absolute right-0 h-8 pr-2 cursor-pointer;
+    filter: invert(1);
+
 
 }
 
@@ -112,6 +111,7 @@
 .messages-main-wrapper{
     @apply flex flex-1 flex-col-reverse py-2 px-4;
     @apply overflow-y-auto overflow-x-hidden relative;
+
 }
 
 .message-content-wrapper{
@@ -176,37 +176,34 @@
 
 /* -----------------------------message-box icons --------------------- */
 .message-icons-main {
-    height: 48px;
-    border-top: 1px solid #393954;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
+    @apply flex h-12 items-center py-0 px-4 justify-between border-t-[1px] border-[#393954] border-solid;
 }
 .message-icons {
     display: block;
 }
 
 .icon {
-    display: inline-block;
-    height: 30px;
-    cursor: pointer;
-    opacity: .85;
-    transition: .3s;
-    margin-left: 16px;
+    @apply inline-block cursor-pointer ml-4 opacity-80 h-[30px] duration-[.3s];
+    color: white!important;
+
 }
 
 .icon input {
-    display: none;
+    @apply hidden
 }
 
 .icon label {
-    cursor: pointer;
+    @apply cursor-pointer;
+    
 }
 
 .icon img {
-    @apply h-full
+    @apply h-full;
+    filter: invert(1);
+
 }
+
+
 
 @media screen and (min-width: 1000px) { 
     .last-message{
