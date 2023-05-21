@@ -107,7 +107,7 @@
 
 }
 
-/* --------------------chat page responsive ------------------- */
+/* --------------------chat page responsive message bubble ------------------- */
 
 .messages-main-wrapper{
     @apply flex flex-1 flex-col-reverse py-2 px-4;
@@ -141,12 +141,71 @@
 
 }
 
-.recieved-message .message-bubble{
+.sent-message .message-bubble{
     @apply bg-[green]
 }
 
-.recieved-message {
+.sent-message {
     @apply text-right;
+}
+
+/* ----------------------- message box ------------------------ */
+.message-box-main{
+    @apply h-32 flex flex-col relative border-t-[1px] border-[#393954];
+}
+
+.message-box{
+    @apply flex-1 p-0.5
+}
+
+.message-box textarea {
+    @apply h-full whitespace-normal	rounded;
+
+    @apply w-full leading-5 relative inline-flex z-[1] flex-initial select-auto min-h-0;
+    @apply align-middle break-normal m-0 no-underline bg-transparent border-0 cursor-text py-2 px-4;
+    @apply resize-none text-white bg-[#454566];
+    
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 1px rgb(60 66 87 / 16%), 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent;
+    transition: background-color .24s,box-shadow .24s;
+    transition-property: background-color,box-shadow;
+    transition-duration: .24s,.24s;
+    transition-timing-function: ease,ease;
+    transition-delay: 0s,0s;
+}
+
+/* -----------------------------message-box icons --------------------- */
+.message-icons-main {
+    height: 48px;
+    border-top: 1px solid #393954;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.message-icons {
+    display: block;
+}
+
+.icon {
+    display: inline-block;
+    height: 30px;
+    cursor: pointer;
+    opacity: .85;
+    transition: .3s;
+    margin-left: 16px;
+}
+
+.icon input {
+    display: none;
+}
+
+.icon label {
+    cursor: pointer;
+}
+
+.icon img {
+    @apply h-full
 }
 
 @media screen and (min-width: 1000px) { 

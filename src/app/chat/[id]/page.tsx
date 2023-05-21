@@ -19,8 +19,9 @@ export default function MessagePane(){
             <div className="messages-main-wrapper">
                 <div className="message-content-wrapper">
                     <div className="message-content">
+                        <div className="message"></div>
                         <div className="message-bubble">
-                            <span className="message-text sent">
+                            <span className="message-text">
                                 Hello World
                             </span>
                             <span className="message-timestap-wrap">
@@ -33,10 +34,9 @@ export default function MessagePane(){
                 </div>
 
                 <div className="message-content-wrapper">
-                    <div className="recieved-message">
-
+                    <div className="sent-message">
+                        <div className="block"></div>
                         <div className="message-content">
-
                             <div className="message-bubble">
                                 <span className="message-text">
                                     Hi
@@ -50,8 +50,29 @@ export default function MessagePane(){
                         </div>
                     </div>
                 </div>
-                
-                
+            </div>
+
+            <div className="message-box-main">
+                <div className="message-box">
+                    <textarea name="" 
+                    placeholder="Write a message..">
+                    </textarea>
+                </div>
+                <div className="message-icons-main">
+                    <div className="block"></div>
+                    <div className="message-icons">
+                        <div className="icon">
+                            <label>
+                                <img src="https://promptbase.com/assets/icons/attach_image.svg" 
+                                alt="" />
+                                <input _ngcontent-serverapp-c176="" type="file" multiple></input>
+                            </label>
+                        </div>
+                        <div className="icon">
+                                <img src="	https://promptbase.com/assets/icons/send.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
