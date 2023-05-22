@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import times from '../../../public/home/times.svg'
+import times from '../../../public/marketplace/times.svg'
 import React,{ useState } from "react";
 
 const categoriesData = [
