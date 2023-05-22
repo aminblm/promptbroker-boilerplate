@@ -19,6 +19,9 @@ module.exports = {
       },
       fontFamily: {
         "pbr": ["Finlandica"]
+      },
+      aspectRatio: {
+        '560/315': "560 / 315"
       }
     },
   },
