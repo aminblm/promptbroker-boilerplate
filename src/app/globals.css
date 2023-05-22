@@ -88,6 +88,13 @@ main {
   @apply bg-black w-[300px] left-2 text-sm h-9 flex justify-start items-center pl-2.5 rounded-b-md
 }
 
+.active {
+  @apply text-black border-b-2 border-b-blue-500 h-full font-medium bg-gray-300 bg-gray-100 active:transition delay-150 ease-in-out duration-700
+}
+
+.hide {
+  @apply hidden
+}
 
 @media screen and (max-width: 1300px) { 
   .faq {
@@ -110,6 +117,7 @@ main {
   .faq {
     @apply ml-[180px] w-fit
   }
+
   .changelog {
     @apply ml-[180px] w-fit
   }
@@ -123,6 +131,9 @@ main {
     @apply ml-[180px] w-fit
   }
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .faq {
@@ -140,6 +151,80 @@ main {
   .terms {
     @apply ml-[1px] w-fit
   }
+
+  .sell {
+    @apply mx-[10px]
+  }
+  .progress-bar {
+    @apply w-[70%]
+  }
+  .sell-content {
+    @apply flex flex-col w-full
+  }
+
+  .sell-prompt {
+    @apply w-full flex flex-col justify-center items-center text-center
+  }
+
+  .about-prompt-video {
+    @apply w-full
+  }
+
+  .formdata {
+    @apply w-full flex flex-col justify-center items-center
+  }
+
+  .formdata-info {
+    @apply w-full 
+  }
+  .hero-img {
+    @apply flex justify-center items-center mt-10
+  }
+
+  .sign-center {
+    @apply text-center
+  }
+  .prompt-details {
+    @apply w-full 
+  }
+
+  .prompt-details-heading {
+    @apply flex flex-col justify-center items-center text-center
+  }
+
+   .prompt-file {
+    @apply w-full 
+  }
+  
+  .prompt-center {
+    @apply  mx-auto
+  }
+  .completion {
+    @apply text-center
+  }
+
+  .chatgpt {
+    @apply text-center
+  }
+
+  .validate {
+    @apply w-[20%]
+  }
+
+  .completion-gpt button {
+    @apply flex flex-col items-center justify-center
+  }
+
+  .get-paid-full {
+    @apply w-full 
+  }
+  .get-paid  {
+    @apply  flex flex-col items-center justify-center text-center
+  }
+
+  .connect-bank-btn {
+    @apply mx-auto
+  }
 }
 @media screen and (max-width: 576px) {
   .blog {
@@ -148,4 +233,6 @@ main {
   .blogcards {
     @apply flex flex-col items-start
   }
+  
+  
 }
