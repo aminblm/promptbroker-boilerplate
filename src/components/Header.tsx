@@ -1,5 +1,7 @@
 "use client"
 import Link from "next/link"; 
+import { BsFillBellFill } from 'react-icons/Bs';
+
 
 export default function Header() { 
   return (
@@ -20,7 +22,6 @@ export default function Header() {
         <Link href="/marketplace">Marketplace</Link>
         <Link href="/generate">Generate</Link>
         <Link href="/hire">Hire</Link>
-        <Link href="/account">Account</Link>
         <Link href="/login">Login</Link>
         <Link href="/sell" className="flex gap-1 items-center group">
           <span className="group-[.active]:text-pbr-darkpurple">Sell</span>
