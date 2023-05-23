@@ -1,16 +1,18 @@
-"use client";
-
 export const metadata = {
   title: "Settings",
 };
-
+// import { useRouter } from "next/router";
 import Notification from "@/components/settings/notification";
+import Accountheader from "../tabs/Accountheader";
 
 // When the user logs in, we have the accounts page
 
 export default function Settings() {
+  // const router = useRouter();
+  // const { view } = router.query;
   return (
     <div className="sm:mx-12 mx-2">
+      {/* <Accountheader currentTab="settings" /> */}
       <div>
         <h3 className="text-4xl py-3">Settings</h3>
         <hr className="bg-white" />
