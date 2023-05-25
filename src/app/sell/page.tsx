@@ -1,8 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
-import { RxCaretLeft } from 'react-icons/rx';
-import { FaTrashAlt, FaEnvelope, FaUserAlt, FaEyeSlash, FaCheckCircle } from 'react-icons/fa';
-import { MdLock } from 'react-icons/md';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt, faEnvelope, faUserAlt, faEyeSlash, faCheckCircle, faLock, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 import { FcGoogle } from 'react-icons/fc';
 
 interface Country {
@@ -236,7 +235,7 @@ const Sell = () => {
               placeholder="E-mail*"
               className="text-sm h-[20px] outline-ligbtblue w-[95%] mb-1 text:focus:translate-y-[-10px]"
             />
-            <FaEnvelope className="fill-blue-700" />
+            <FontAwesomeIcon icon={faEnvelope} className="fill-blue-700" />
           </div>
           <p className="text-[10px] mt-[-10px] text-red-500">E-mail is required</p>
           <div className="password flex justify-between border-b-2 border-red-500">
@@ -245,8 +244,8 @@ const Sell = () => {
               placeholder="Password *"
               className="text-sm h-[30px] outline-blue w-[95%] mb-1 focus:bg-pbr-purple"
             />
-            <FaEyeSlash className="mr-1"/>
-            <MdLock className="text-xl mb-1 fill-blue-700" />
+            <FontAwesomeIcon icon={faEyeSlash} className="mr-1"/>
+            <FontAwesomeIcon icon={faLock} className="text-xl mb-1 fill-blue-700" />
           </div>
           <p className="text-[10px] mt-[-10px] text-red-500">Password is required</p>
           <div className="login">
@@ -272,7 +271,7 @@ const Sell = () => {
               placeholder="Name *"
               className="text-sm h-[20px] outline-ligbtblue w-[95%] mb-1 text:focus:translate-y-[-10px]"
             />
-            <FaUserAlt className="fill-blue-700" />
+            <FontAwesomeIcon icon={faUserAlt} className="fill-blue-700" />
           </div>
           <div className="email w-full flex justify-between border-b-2 border-red-500">
             <input 
@@ -280,7 +279,7 @@ const Sell = () => {
               placeholder="E-mail*"
               className="text-sm h-[20px] outline-ligbtblue w-[95%] mb-1 text:focus:translate-y-[-10px]"
             />
-            <FaEnvelope className="fill-blue-700" />
+            <FontAwesomeIcon icon={faEnvelope} className="fill-blue-700" />
           </div>
           <p className="text-[10px] text-red-500">E-mail is required</p>
           <div className="password flex justify-between border-b-2 border-red-500">
@@ -289,8 +288,8 @@ const Sell = () => {
               placeholder="Password *"
               className="text-sm h-[30px] outline-blue w-[95%] mb-1 focus:bg-pbr-purple"
             />
-            <FaEyeSlash className="mr-1"/>
-            <MdLock className="text-xl mb-1 fill-blue-700" />
+            <FontAwesomeIcon icon={faEyeSlash} className="mr-1"/>
+            <FontAwesomeIcon icon={faLock} className="text-xl mb-1 fill-blue-700" />
           </div>
           <p className="text-[10px] text-red-500">Password is required</p>
           <div className="login">
@@ -309,7 +308,7 @@ const Sell = () => {
     };
   
     return (
-      <div className="w-full h-full text-black flex flex-col justify-between">
+      <div className="form-container w-full h-full text-black flex flex-col justify-between">
         <div className="formpage flex  border-b-[1px] h-[12%] items-center justify-start w-full">
           <div className="sign-in w-[30%] h-full flex justify-start items-center">
             <p onClick={() => handleToggleForm("sign in")} className={`cursor-pointer w-full text-gray-400 flex justify-center items-center mr-5 py-auto font-semibold h-full ${isActive === "sign in" ? "active" : ''}`}> Sign In </p>
@@ -335,12 +334,12 @@ const Sell = () => {
       <>
     <section className="progress w-full flex justify-between items-center mt-10">
       <div onClick={handlePrevPage} className={`flex items-center justify-center mr-[-10px]  hover:transition duration-700 ease-in-out hover:translate-x-[-5px] cursor-pointer ${currentPage === 1 ? "hide" : ""}`}> 
-      <span className="text-2xl mr-[3px]"><RxCaretLeft /> </span>Back</div>
+      <span className="text-2xl mr-[3px]"><FontAwesomeIcon icon={faCaretLeft}/> </span>Back</div>
         <div className={`progress-bar h-[5px] bg-pbr-purple  rounded-lg ${currentPage !== 1 ? "w-[76%]" : 'w-[90%]'}`}>
           <div className=" progress-bar-fill h-[5px] bg-white rounded-lg" style={{ width: `${progressBar}`}}></div>
         </div>
         <div className="steps"> Step {currentPage}/{max_progress} </div>
-        <span className={`ml-[-10px] cursor-pointer ${currentPage === 1 ? "hide" : ""}`}><FaTrashAlt onClick={handleDelete}/></span>
+        <span className={`ml-[-10px] cursor-pointer ${currentPage === 1 ? "hide" : ""}`}><FontAwesomeIcon icon={faTrashAlt} onClick={handleDelete}/></span>
       </section>
       </>
     );
@@ -369,7 +368,7 @@ const Sell = () => {
           if your prompt contained a variable like [Tone of voice], this variable should be changed to "happy" or "sad" in your test prompt. 
           Buyers will not see this, it is only for PromptBase's internal testing.</i></span>
           <textarea name="" className="h-[250px] focus:border-green-600 outline-green-700 pl-3 pt-2 rounded-md bg-pbr-purple"></textarea>
-          <span className="validate text-green-700 text-[12px] flex justify-around items-center w-[18%] mt-2"><FaCheckCircle /> Valid Text Prompt</span>
+          <span className="validate text-green-700 text-[12px] flex justify-around items-center w-[18%] mt-2">< FontAwesomeIcon icon={faCheckCircle} /> Valid Text Prompt</span>
           <span className="text-[12px] font-semibold mt-5">*Engine</span>
           <span className="text-[12px] my-1.5 font-sm text-gray-400"><i>What GPT Engine does this prompt use</i></span>
           <select className="w-fit bg-pbr-purple rounded outline-none h-[30px]">

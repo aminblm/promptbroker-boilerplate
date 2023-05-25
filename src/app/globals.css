@@ -132,7 +132,9 @@ main {
   }
 }
 
-
+.form-container svg {
+  @apply text-blue-700
+}
 
 
 @media screen and (max-width: 768px) {
