@@ -6,7 +6,7 @@
 export default function Prompt() {
   return (
     <div className="">
-      prompt
+      prompt 
     </div>
   )
 }

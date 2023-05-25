@@ -113,7 +113,7 @@ const MenuItem = ({ name, children, sort, time, model, category, handleSelect, .
 export default function Sidebar({sort, time, model, categorys, handleSelect, handleClearFilter} : {sort: any, time: any, model: any, categorys: any, handleSelect: any, handleClearFilter: any}) {
 
   return (
-    <div className="w-[fit-content]">
+    <div className="w-[fit-content] max-[1000px]:hidden">
       <div className="flex gap-[2] p-[0.2rem] items-center justify-center border-solid border-2 border-white rounded-[0.5rem] cursor-pointer" onClick={() => handleClearFilter()}>
         <span className="text-[1rem]">Clear Filter</span>
         <Image
