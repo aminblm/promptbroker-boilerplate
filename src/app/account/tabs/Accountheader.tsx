@@ -8,7 +8,7 @@ function Accountheader({
   currentTab = "favorites",
 }: {
   children: React.ReactNode;
-  // currentTab: React.ReactNode;
+  currentTab: React.ReactNode;
 }) {
   const pathName = usePathname();
   return (
