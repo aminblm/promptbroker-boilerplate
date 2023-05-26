@@ -24,7 +24,7 @@ export default function Favorites() {
   return (
     <>
       <div className="">Favorite</div>
-      {pathName}
+      {/* {pathName} */}
     </>
   );
 }
