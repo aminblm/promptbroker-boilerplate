@@ -45,7 +45,7 @@ export default function MessagePane(){
                         </span>
                     </div>
                     <div>
-                        <div className="sent-message">
+                        <div className="sent-message message">
                             <div ></div>
                             <div className="message-content">
                                 <div className="message-bubble">

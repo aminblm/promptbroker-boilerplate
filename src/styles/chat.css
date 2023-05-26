@@ -15,7 +15,7 @@
     flex: 1;
     background-color:#222236;
     border-top: 2px solid #393954;
-    height: calc(100% - 64px)!important;
+    /* height: calc(100% - 64px)!important; */
     padding: 1em;
     margin: 0 -1em;
 }
@@ -135,9 +135,10 @@
 .message-timestamp {
     font-size: 8px;
     opacity: .85;
-    margin-left: 4px;
+    /* margin-left: 4px; */
 
 }
+
 .date-separator{
     text-align: center;
     padding: 16px 0;
@@ -167,7 +168,7 @@
 }
 
 .message-box{
-    @apply flex-1 p-0.5
+    @apply flex-1 p-1
 }
 
 .message-box textarea {
@@ -220,6 +221,7 @@
     position: relative;
     top: 4px;
     margin-left: 4px;
+    display: inline-block;
 
 }
 
