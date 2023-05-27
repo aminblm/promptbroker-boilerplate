@@ -1,14 +1,16 @@
 import Buttons from "./buttons";
 
 export default function DashboardLayout({
-  children, // will be a page or nested layout
+  children,
+  currentTab, // will be a page or nested layout
 }: {
   children: React.ReactNode;
+  currentTab: React.ReactNode;
 }) {
   return (
     <section>
       {/* Include shared UI here e.g. a header or sidebar */}
-      <Buttons />
+      <Buttons currentTab={currentTab}>{children}</Buttons>
       {children}
     </section>
   );
