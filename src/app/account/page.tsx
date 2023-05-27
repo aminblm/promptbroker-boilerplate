@@ -1,12 +1,12 @@
 "use client";
 export const metadata = {
-  title: "Favorites",
+  title: "Account",
 };
 
-export default function Favorites() {
+export default function Account() {
   return (
     <>
-      <div className="">Favorite</div>
+      <div className="mx-auto">Account</div>
     </>
   );
 }
