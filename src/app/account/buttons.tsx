@@ -2,18 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { useRouter } from "next/router";
-import open from "../../../public/home/open_new_window.svg";
 import Image from "next/image";
 
-export default function Buttons({
-  children,
-  currentTab,
-}: {
+type ButtonsProps = {
+  currentTab: string | null;
   children: React.ReactNode;
-  currentTab: React.ReactNode;
-}) {
+};
+
+export default function Buttons({ currentTab, children }: ButtonsProps) {
   const pathName = usePathname();
+
   return (
     <div className="flex flex-col-reverse sm:flex-row justify-between mx-2 sm:mx-12">
       <div className="sm:pl-0 pl-4">
@@ -59,30 +57,23 @@ export default function Buttons({
         >
           Payouts
         </button>
-        <Link
-          href="/account/favorites"
-          // className={`${currentTab === "favorites" && "text-[#000]"}`}
-        >
+        <Link href="/account/favorites">
           <button
-            className={`rounded-full bg-${
+            className={`rounded-full ${
               pathName === "/account/favorites"
-                ? "white text-black"
-                : "[#393954] text-white"
+                ? "bg-white text-black"
+                : "bg-[#393954] text-white"
             } text-xs font-semibold py-2 px-3 ml-3`}
           >
             Favorites
           </button>
         </Link>
-
-        <Link
-          href="/account/settings"
-          // className={`${currentTab === "settings"}`}
-        >
+        <Link href="/account/settings">
           <button
-            className={`rounded-full bg-${
+            className={`rounded-full ${
               pathName === "/account/settings"
-                ? "white text-black"
-                : "[#393954] text-white"
+                ? "bg-white text-black"
+                : "bg-[#393954] text-white"
             } text-xs font-semibold py-2 px-3 ml-3`}
           >
             Settings
@@ -99,8 +90,10 @@ export default function Buttons({
           </button>
           <Image
             className="absolute inset-y-0 right-0 h-4 filter invert-12 sepia-28 saturate-806 hue-rotate-201 brightness-90 contrast-93 ml-1"
-            src={open}
+            src="/home/open_new_window.svg"
             alt="open new window"
+            width={16}
+            height={16}
           />
         </div>
       </div>
