@@ -1,5 +1,5 @@
 import chats_data from "../../../chat_data"
-import ChatsList from "../../components/ChatsList"
+import ChatsList from "../../components/Chat/ChatsList"
 
 export const metadata = {
     title: "Chat"

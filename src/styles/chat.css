@@ -10,13 +10,17 @@
     text-align: center!important;
 }
 
-.profile-picture-wrapper img {
+.profile-picture-wrapper {
     @apply w-12 h-12 rounded-full relative shrink-0 overflow-hidden;
 
 }
 
+.profile-picture-wrapper img {
+    width: 100%;
+}
+
 .wrapper{
-    @apply flex-1 p-4 my-0 mx-[-1em] border-t-[2px] border-solid border-[#393954];
+    @apply flex flex-1 p-4 my-0 mx-[-1em] border-t-[2px] border-solid border-[#393954];
     height: calc(100% - 64px)!important;
 }
 
@@ -231,6 +235,7 @@
     display: inline-block;
 
 }
+
 
 @media screen and (min-width: 1000px) { 
     .last-message{
