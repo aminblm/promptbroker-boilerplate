@@ -64,9 +64,7 @@ export default function MessagePane(){
                             </div>
                         </div>
                     </div>
-                </div>
-
-                
+                </div> 
             </div>
 
             <div className="message-box-main">
