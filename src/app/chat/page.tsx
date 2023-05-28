@@ -5,7 +5,6 @@ export const metadata = {
     title: "Chat"
 }
 
-
 export default function Chat() {
 
     // Conditional rendering. Check whether chat data exists and render the right data

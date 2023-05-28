@@ -138,29 +138,23 @@
 }
 
 .message-timestamp-wrapper {
-    float: right;
-    margin-left: 4px;
+    @apply float-right ml-1
+
 }
 
 .message-timestamp {
-    font-size: 8px;
-    opacity: .85;
+    @apply opacity-80 text-[8px]
+    
     /* margin-left: 4px; */
 
 }
 
 .date-separator{
-    text-align: center;
-    padding: 16px 0;
+    @apply text-center py-4 px-0;
 }
 
 .date-separator span {
-    background-color: #fff;
-    color: #222236;
-    padding: 4px 8px;
-    border-radius: 8px;
-    opacity: .85;
-    font-size: 12px;
+    @apply opacity-80 text-[12px] py-1 px-2 rounded-lg bg-[#fff] text-[#222236];
 }
 
 .sent-message .message-bubble{

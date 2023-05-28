@@ -1,6 +1,7 @@
 import chats_data from "../../../chat_data"
 import MessageWindow from "./MessageWindow"
 import ChatInfo from "./ChatInfo"
+
 export default function ChatsList(){
     return (
         <div className="wrapper">
@@ -31,7 +32,7 @@ export default function ChatsList(){
                     )}
             </div>
             <MessageWindow/>
-            <ChatInfo/>
+            {/* <ChatInfo/> */}
         </div>
     )
 
