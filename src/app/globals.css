@@ -23,12 +23,12 @@
 }
 
 body {
-  @apply font-pbr bg-pbr-darkpurple text-white;
+  @apply font-pbr bg-pbr-darkpurple text-white p-4;
   overflow:hidden;
 }
 
 .center {
-  /* @apply w-full max-w-[1366px] mx-auto; */
+  @apply w-full max-w-[1366px] mx-auto;
 }
 
 h2,h3 {
@@ -44,9 +44,22 @@ h3 {
 }
 
 main {
+  @apply py-4
 }
 
 .terms {
   @apply max-w-[872px] mx-auto
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height:8px
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.5);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.1);
+}

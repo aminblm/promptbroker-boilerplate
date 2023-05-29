@@ -3,7 +3,7 @@ import chats from "../../../chat_data"
 
 export default function MessageWindow(){ 
     return(
-        <div className="message-pane-main">
+        <div className="message-pane-main hide-display">
             <div className="chat-header">
                 <div className="chat-header-left">
                     <img className="chat-header-back-arrow" src="/chat/arrow_back_black_24dp.svg" alt="arrow back" />
@@ -37,6 +37,8 @@ export default function MessageWindow(){
                         </div>
                     </div>
                 </div>
+
+                
 
                 <div className="message-content-wrapper">
                     <div className="date-separator">

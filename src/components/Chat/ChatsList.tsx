@@ -5,7 +5,7 @@ import UserChatInfo from "./UserChatInfo"
 export default function ChatsList(){
     return (
         <div className="wrapper">
-            <div className="sidebar">
+            <div className="sidebar hide-display">
                 {chats_data.map(chat_data =>
                     <div className="conversation-outer-wrapper">
                         <div className="conversation-inner-wrapper">
