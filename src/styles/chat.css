@@ -83,8 +83,8 @@
 .chat-header {
    @apply h-16 p-8 flex relative items-center;
    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 40%);
-   padding: 0em 0em;
-   margin: -1em -1em;
+   /* padding: 0em 0em;
+   margin: -1em -1em; */
    justify-content: space-between;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .chat-header-profile {
-    @apply h-16 p-4 flex relative items-center;
+    @apply h-full p-4 flex relative items-center;
 }
 
 .chat-header-profile img{
@@ -107,7 +107,7 @@
 }
 
 .chat-header-username{ 
-    display: inline-block;
+    @apply inline-block;
     font-weight: 700;
 }
 .chat-header-info {
@@ -121,7 +121,7 @@
 .messages-main-wrapper{
     @apply flex flex-1 flex-col-reverse py-2 px-4;
     @apply overflow-y-auto overflow-x-hidden relative;
-    margin: 0em -1em;
+    /* margin: 0em -1em; */
 }
 
 
@@ -167,7 +167,7 @@
 
 /* ----------------------- message box ------------------------ */
 .message-box-main{
-    margin: 0em -1em;
+    /* margin: 0em -1em; */
     @apply h-32 flex flex-col relative border-t-[1px] border-[#393954];
 }
 
@@ -229,6 +229,108 @@
     display: inline-block;
 
 }
+
+.user-chat-info{
+    @apply border-l-[2px] border-solid border-[#393954] overflow-y-auto;
+}
+.user-chat-info-body-inner{
+    @apply p-4;
+}
+
+.user-chat-info p {
+    @apply opacity-80
+}
+
+.underline{
+    text-decoration: underline;
+}
+.line{
+    width: 100;
+    height: 1px;
+    background-color: #eee;
+    margin: 12px 0;
+}
+
+.sale-main-wrapper{
+    text-align: center;
+}
+
+.profile-pic-border{
+    width: 140px;
+    height: 140px;
+    border: 3px solid white;
+    -webkit-box-shadow: 2px 3px 9px 0 rgb(0 0 0 / 25%);
+}
+
+.profile-user-info h4{
+    margin: 0 0 8px;
+    font-weight: 500;
+}
+.bio{
+    margin: 0 0 8px;
+}
+
+.stats {
+    display: inline-flex;
+}
+.stat-views{
+    margin-left: 8px;
+}
+.stat{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.stat img{
+    height: 16px;
+    width: 16px;
+    filter: invert(1);
+    margin-right: 4px;
+}
+
+.ranking{
+    margin-top: 4px;
+
+}
+
+.socials{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.action-btn{
+    font-size: 16px!important;
+    font-weight: 500;
+    background-color: #fff;
+    color: #222236;
+    font-size: 1.5rem;
+    display: inline-flex;
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: .3s;
+    transition: opacity .3s ease;
+}
+
+.view-profile {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #222236;
+}
+
+.rates {
+    font-size: .7em;
+    margin-top: 8px;
+    opacity: .75;
+    padding-bottom: .5rem;
+}
+
+
+/* .user-chat-info-body-inner{
+
+} */
+
+
 
 
 @media screen and (min-width: 1000px) { 

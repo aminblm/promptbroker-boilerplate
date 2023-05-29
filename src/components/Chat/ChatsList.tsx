@@ -1,6 +1,6 @@
 import chats_data from "../../../chat_data"
 import MessageWindow from "./MessageWindow"
-import ChatInfo from "./ChatInfo"
+import UserChatInfo from "./UserChatInfo"
 
 export default function ChatsList(){
     return (
@@ -32,7 +32,7 @@ export default function ChatsList(){
                     )}
             </div>
             <MessageWindow/>
-            {/* <ChatInfo/> */}
+            <UserChatInfo/>
         </div>
     )
 

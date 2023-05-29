@@ -6,7 +6,7 @@ export default function MessageWindow(){
         <div className="message-pane-main">
             <div className="chat-header">
                 <div className="chat-header-left">
-                    <img className="chat-header-back-arrow" src="arrow_back_black_24dp.svg" alt="arrow back" />
+                    <img className="chat-header-back-arrow" src="/chat/arrow_back_black_24dp.svg" alt="arrow back" />
                     <div className="chat-header-profile">
                         <img src={chats[1].image} alt="profile" />
                         <div className="chat-header-username">
@@ -14,7 +14,7 @@ export default function MessageWindow(){
                         </div>
                     </div>
                 </div>
-                <img className="chat-header-info" src="info.svg" alt="chat info" />
+                <img className="chat-header-info" src="/chat/info.svg" alt="chat info" />
             </div>
             <div className="messages-main-wrapper">
                 <div className="message-content-wrapper">
@@ -57,7 +57,7 @@ export default function MessageWindow(){
                                                 11:12pm
                                             </span>
                                             <span >
-                                                <img src="double_check_thick.svg" alt="read status" className="read-status-icon"/>
+                                                <img src="/chat/double_check_thick.svg" alt="read status" className="read-status-icon"/>
                                             </span>
                                         </span>
                                 </div>
@@ -78,12 +78,12 @@ export default function MessageWindow(){
                     <div className="message-icons">
                         <div className="icon">
                             <label>
-                                <img src="attach_image.svg" alt="attach" />
+                                <img src="/chat/attach_image.svg" alt="attach" />
                                 <input type="file" multiple></input>
                             </label>
                         </div>
                         <div className="icon">
-                                <img src="send.svg" alt="send" />
+                                <img src="/chat/send.svg" alt="send" />
                         </div>
                     </div>
                 </div>

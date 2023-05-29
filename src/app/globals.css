@@ -23,12 +23,12 @@
 }
 
 body {
-  @apply font-pbr bg-pbr-darkpurple text-white p-4;
+  @apply font-pbr bg-pbr-darkpurple text-white;
   overflow:hidden;
 }
 
 .center {
-  @apply w-full max-w-[1366px] mx-auto;
+  /* @apply w-full max-w-[1366px] mx-auto; */
 }
 
 h2,h3 {
@@ -44,7 +44,6 @@ h3 {
 }
 
 main {
-  @apply py-4
 }
 
 .terms {
