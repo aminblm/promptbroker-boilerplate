@@ -84,17 +84,17 @@ export default function Buttons({ currentTab, children }: ButtonsProps) {
         <button className="bg-white text-gray-700 rounded-md text-sm font-semibold py-1 px-2 ml-3">
           Stripe Dashboard
         </button>
-        <div className="inline-flex relative">
-          <button className="bg-white w-full text-gray-700 rounded-md text-sm font-semibold py-1 px-2 ml-3">
+        <div className="relative">
+          <button className="inline-flex bg-white w-full text-center text-gray-700 rounded-md text-sm font-semibold py-1 px-2 ml-3">
             Public Profile
+            <Image
+              className="inset-y-0 right-0 h-4 filter invert-12 sepia-28 saturate-806 hue-rotate-201 brightness-90 contrast-93 ml-1"
+              src="/home/open_new_window.svg"
+              alt="open new window"
+              width={16}
+              height={16}
+            />
           </button>
-          <Image
-            className="absolute inset-y-0 right-0 h-4 filter invert-12 sepia-28 saturate-806 hue-rotate-201 brightness-90 contrast-93 ml-1"
-            src="/home/open_new_window.svg"
-            alt="open new window"
-            width={16}
-            height={16}
-          />
         </div>
       </div>
     </div>

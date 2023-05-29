@@ -1,6 +1,6 @@
 "use client";
 
-import PromptCard from "@/components/PromptCard";
+import FavoriteCard from "@/components/PromptCard";
 import { mockPrompts } from "@/mock/data";
 import { iPrompt } from "@/types";
 import { useEffect, useState } from "react";
@@ -32,7 +32,7 @@ export default function Marketplace() {
 
           <div className="grid grid-cols-4 gap-4 mt-[2rem]">
             {prompts.map((prompt, idx) => (
-              <PromptCard key={idx} prompt={prompt} />
+              <FavoriteCard key={idx} prompt={prompt} />
             ))}
             <CardProduct />
             <CardProduct />

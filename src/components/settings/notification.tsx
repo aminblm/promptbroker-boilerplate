@@ -5,7 +5,7 @@ export default function Notification() {
         <tr className="align-middle">
           <th></th>
           <th className="pl-2 text-left">Email</th>
-          <th className="text-left">Notification</th>
+          <th className="text-left pl-[20%]">Notification</th>
         </tr>
 
         <tr className="border-b border-solid border-gray-700">
@@ -21,7 +21,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -42,7 +42,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -63,7 +63,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -100,7 +100,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -123,7 +123,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -144,7 +144,6 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td></td>
         </tr>
 
         <tr className="border-b border-solid border-gray-700">
@@ -160,7 +159,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -183,7 +182,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -206,7 +205,7 @@ export default function Notification() {
               <span className="checkmark"></span>
             </label>
           </td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -226,7 +225,7 @@ export default function Notification() {
             </div>
           </td>
           <td className="w-200 px-2"></td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -247,7 +246,7 @@ export default function Notification() {
             </div>
           </td>
           <td className="w-200 px-2"></td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -268,7 +267,7 @@ export default function Notification() {
             </div>
           </td>
           <td className="w-200 px-2"></td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>
@@ -287,7 +286,7 @@ export default function Notification() {
             </div>
           </td>
           <td className="w-200 px-2"></td>
-          <td>
+          <td className="pl-[20%]">
             <label>
               <input type="checkbox" className="w-5 h-5" />
               <span className="checkmark"></span>

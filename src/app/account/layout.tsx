@@ -1,5 +1,9 @@
 import Buttons from "./buttons";
 
+export const metadata = {
+  title: "Account ",
+};
+
 export default function DashboardLayout({
   children,
   currentTab, // will be a page or nested layout
