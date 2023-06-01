@@ -19,6 +19,7 @@ export default function Header() {
         </button>
       </div>
       <div className="navlinks">
+        <Link href="/profile">Profile</Link>
         <Link href="/marketplace">Marketplace</Link>
         <Link href="/generate">Generate</Link>
         <Link href="/hire">Hire</Link>
