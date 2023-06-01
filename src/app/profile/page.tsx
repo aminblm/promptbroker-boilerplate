@@ -2,7 +2,7 @@ import React from 'react';
 export default function Profile() {
   return (
     <div className="body_container">
-        <div className="hero-container">
+        <div className="profile-hero-container">
             <div className="hero-banner">
                 <img src="https://firebasestorage.googleapis.com/v0/b/promptbase.appspot.com/o/DALLE_IMAGES%2Fic5ASefHHEUQNeovrEKj0NqK5343%2Fresized%2F1680856103226_1000x1000.webp?alt=media&token=9266c516-3b78-4c4e-aeb7-97d4844342ee" alt="" />
             </div>
