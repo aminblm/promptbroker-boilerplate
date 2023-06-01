@@ -423,7 +423,7 @@ header{
 }
 @media screen and (min-width: 876.5px) {
     header .logo-container{
-        margin-left: -5%;
+        margin-left: 5%;
         display: flex;
         align-items: center;
     }
