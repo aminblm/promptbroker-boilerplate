@@ -1,4 +1,5 @@
 export interface iPrompt {
+  id?: string;
   rating?: string;
   name?: string;
   price?: number;

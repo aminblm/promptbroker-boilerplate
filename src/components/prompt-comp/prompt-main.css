@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1024px) {
+    .prompt-main-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .prompt-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .midjourney-tag{
+        left: 60px !important;
+    }
+   .prompt-header>h1:first-of-type {
+       font-size: 2.0rem;
+   }
+   .prompt-badg{
+    width: 300px;
+   }
+   .users-tag{
+    flex-direction: column;
+   }
+   .user-tag-cont-1{
+    width: 198PX;
+   }
+   .user-tag-cont-2{
+    width: 190PX;
+    margin: -6px 0 10px 3px;
+
+   }
+   .holi-line{
+    visibility: visible;
+    display: flex;
+   }
+   .prompt-price{
+    position: relative;
+    box-sizing: border-box;
+    width: 100px;
+    height: fit-content;
+    margin: 0 auto;
+   }
+   .dollar-sign{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -7px;
+    font-style: bold;
+   }
+    .side-prompt{
+        visibility: hidden !important;
+        position: absolute;
+    }
+    .center-prompt{
+        visibility: visible !important;
+        position: relative;
+        width: 100%;
+    }
+    
+}

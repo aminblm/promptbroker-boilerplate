@@ -1,0 +1,11 @@
+@media  only screen and (max-width: 1024px) {
+    .mySwiper-cemnter {
+            width: 100% !important;
+            height: fit-content!important;
+            padding-bottom: 30px !important;
+        }
+    .swiper-pagination-bullet-active{ 
+        background-color: #fff !important;
+    }
+}
+    

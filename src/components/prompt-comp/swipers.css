@@ -1,0 +1,29 @@
+.swiper {
+  width: 100% !important;
+  /* Adjust the alignment according to your requirements */
+}
+.swiper-slide {
+  width: 250px !important;
+  /* Adjust the width according to your requirements */
+  height: fit-content !important;
+  /* Adjust the height according to your requirements */
+}
+.swiper-button-prev {
+  width: 70px !important;
+  height: inherit !important;
+  color: white !important;
+  left: auto !important;
+  top: -20px !important;
+  padding: 80px 0px !important;
+  background-color: rgba(7, 4, 4, 0.66) !important;
+}
+
+.swiper-button-next {
+  width: 70px !important;
+  height: inherit !important;
+  color: white !important;
+  right: -1px !important;
+  top: -20px !important;
+  padding: 80px 0px !important;
+  background-color: rgba(7, 4, 4, 0.66) !important;
+}
