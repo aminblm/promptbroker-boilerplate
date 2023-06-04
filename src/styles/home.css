@@ -414,9 +414,9 @@ header{
     width: 20rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: 23%;
     position: relative;
-    left: 30%;
+    align-self: center;
     margin-bottom: 3rem;
     background-color: white;
     color: black;
