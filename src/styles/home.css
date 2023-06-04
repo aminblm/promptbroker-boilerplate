@@ -410,13 +410,16 @@ header{
     border-radius: 4px;
     margin-bottom: 1rem;
 }
-.profile-market{
-    width: 20rem;
+.market-button{
     display: flex;
     justify-content: center;
-    margin-left: 23%;
-    position: relative;
-    align-self: center;
+    align-items: center;
+}
+.profile-market{
+    width: 15rem;
+    font-size: 1.2rem; 
+    display: flex;
+    justify-content: center;
     margin-bottom: 3rem;
     background-color: white;
     color: black;

@@ -300,8 +300,11 @@ export default function Profile() {
           </div>          
         </div>
         </div>
+        <div className="market-button">
         <a href="" className='profile-market' >Browse Marketplace</a>
         </div>
+       
+      </div>
     </div>
   )
 }
