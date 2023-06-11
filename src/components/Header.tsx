@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() { 
   return (
-    <header>
+    <header className="header-display-none">
       <Link href="/" className="logo">
         <img className="rounded-full" src="/logo.png" alt={"PromptBase"} />
         <h1 className="logoname">PromptBroker</h1>

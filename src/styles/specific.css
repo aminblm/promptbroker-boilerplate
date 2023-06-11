@@ -1,0 +1,28 @@
+/* 
+CSS FILE TO RESET DEFAULT STYLES AND HIDE HEADER
+
+*/
+
+@media only screen and (max-width: 1000px) { 
+    .header-display-none{ 
+        /* display: none; */
+    }
+    main {
+        @apply py-0
+    }
+    body {
+        @apply p-0 px-4
+    }
+}
+
+main {
+    @apply py-0
+}
+body {
+    @apply p-0 px-4
+}
+
+.footer-hide-display {
+    display: none;
+}
+

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
 
   return (
-    <footer>
+    <footer className="footer-hide-display">
       <p className="copyright">
         <span>©</span>
         <span>PromptBroker</span>

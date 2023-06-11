@@ -1,8 +1,9 @@
 import chats from "../../../chat_data"
+import "../../styles/specific.css"
 
 export default function UserChatInfo() {
     return (
-        <div className="user-chat-info hide-display-">
+        <div className="user-chat-info hide-display">
             <div className="chat-header mobile-display-toggle">
                 <div className="chat-header-left">
                     <img className="chat-header-back-arrow" src="/chat/arrow_back_black_24dp.svg" alt="arrow back" />

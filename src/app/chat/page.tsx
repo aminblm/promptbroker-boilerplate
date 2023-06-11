@@ -4,6 +4,7 @@ import ChatsList from "../../components/Chat/ChatsList"
 export const metadata = {
     title: "Chat"
 }
+import Header from '../../components/Header'
 
 export default function Chat() {
 
@@ -11,7 +12,6 @@ export default function Chat() {
     return ( 
         <div>
             <div className="main-chatpage-wrapper">
-
                 {chats_data.length > 0
                 ? <ChatsList/>
                 : <div className="chat-main-empty">
