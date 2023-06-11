@@ -1,6 +1,5 @@
 import chats from "../../../chat_data"
 import "../../styles/specific.css"
-
 export default function UserChatInfo() {
     return (
         <div className="user-chat-info hide-display">
