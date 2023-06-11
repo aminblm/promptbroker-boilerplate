@@ -1,3 +1,9 @@
+/*
+padding and margin on the sidebar and wrapper page is what is causing problems
+remove this and fix the problem. remove head base on page being displayed
+remove padding sides and top based on the page being displayed or use negative margins
+*/
+
 
 .main-chatpage-wrapper{
     @apply flex flex-col h-screen
@@ -21,13 +27,22 @@
 }
 
 .wrapper{
-    @apply flex flex-1 p-4 my-0 mx-[-1em] border-t-[2px] border-solid border-[#393954];
+    @apply flex flex-1 my-0 mx-[-1em] border-t-[2px] border-solid border-[#393954];
     height: calc(100% - 64px)!important;
 }
 
+
+/* .wrapper{
+    @apply flex flex-1 p-4 my-0 mx-[-1em] border-t-[2px] border-solid border-[#393954];
+    height: calc(100% - 64px)!important;
+} */
+
 .sidebar {
-    @apply h-full border-r-[2px] border-solid border-[#393954] overflow-y-auto py-0 px-[1em] m-[-1em];
+    @apply h-full border-r-[2px] border-solid border-[#393954] overflow-y-auto;
 }
+/* .sidebar {
+    @apply h-full border-r-[2px] border-solid border-[#393954] overflow-y-auto py-0 px-[1em] mx-[-1em] my-[-1em];
+} */
 
 /* .sidebar-border-bottom {
     border-bottom: 2px solid #393954;
@@ -35,7 +50,7 @@
 } */
 
 .conversation-inner-wrapper {
-    @apply flex items-center h-20 p-2  border-b-[2px] border-solid border-[#393954];
+    @apply flex items-center h-20 p-6 border-b-[2px] border-solid border-[#393954];
     margin: 0 -2em;
     /* @apply flex items-center gap-4 sticky top-0 left-0 z-10 py-2 */
 }
@@ -43,8 +58,9 @@
 .conversation-inner-wrapper:hover {
     background-color: #393954!important; 
 }
+
 .conversation-info-wrapper {
-    @apply flex-1 p-2;
+    @apply flex-1 p-4;
 }
 
 .top{
@@ -120,7 +136,6 @@
 .messages-main-wrapper{
     @apply flex flex-1 flex-col-reverse py-2 px-4;
     @apply overflow-y-auto overflow-x-hidden relative;
-    /* margin: 0em -1em; */
 }
 
 
@@ -166,7 +181,6 @@
 
 /* ----------------------- message box ------------------------ */
 .message-box-main{
-    /* margin: 0em -1em; */
     @apply h-32 flex flex-col relative border-t-[1px] border-[#393954];
 }
 
@@ -232,6 +246,7 @@
 .user-chat-info{
     @apply border-l-[2px] border-solid border-[#393954] overflow-y-auto w-[332px];
 }
+
 .user-chat-info-body-inner{
     @apply p-4;
 }
@@ -273,9 +288,11 @@
 .stats {
     display: inline-flex;
 }
+
 .stat-views{
-    margin-left: 8px;
+    margin-right: 8px;
 }
+
 .stat{
     display: flex;
     align-items: center;
@@ -316,13 +333,14 @@
     border: 1px solid #fff;
     color: #fff;
     background-color: #222236;
+    margin-top: 8px;
 }
 
 .rates {
-    font-size: .7em;
+    font-size: .75em;
     margin-top: 8px;
     opacity: .75;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -354,5 +372,9 @@
     .user-chat-info-body-inner{
         max-width: 332px;
         margin: auto;
+    }
+    .message-box-main{
+        margin: 0em -1em;
+        @apply h-32 flex flex-col relative border-t-[1px] border-[#393954];
     }
 }
