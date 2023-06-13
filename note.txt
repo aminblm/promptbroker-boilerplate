@@ -1,12 +1,12 @@
 Demo Link
 
-create new branch: git checkout -b <branch_name>
-push new branch: git push origin <branch_name>
-delete branch locally: git branch -d <branch_name>
-delete branch remotely: git push --delete origin <branch_name> 
+Create new branch: git checkout -b <branch_name>
+Push branch: git push origin <branch_name>
+Delete branch locally: git branch -d <branch_name>
+Delete branch remotely: git push --delete Origin <branch_name> 
 
-rebase new branch into main:
+Rebase new branch into main:
 - inside main branch do this: git rebase <branch_name>
 
-react-firebase-hooks
+React-firebase-hooks
 react-firebaseui
