@@ -1,0 +1,1 @@
+export const slugify = (name: string) => name.split(" ").join("-").toLowerCase()

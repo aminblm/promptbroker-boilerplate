@@ -1,0 +1,55 @@
+/* .marketplace {
+
+}
+
+.marketplace .grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+} */
+
+.promptcard {
+  aspect-ratio: 240 / 160;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.promptcard:hover {
+  transform: translateY(-5%);
+}
+
+.promptcard img {
+  height: 100%;
+}
+
+.promptcard .details,
+.promptcard .model {
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+}
+
+.promptcard .model {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 0 4px;
+  width: fit-content;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+}
+
+.promptcard .details {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 4px 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
