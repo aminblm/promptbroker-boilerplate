@@ -1,4 +1,4 @@
-.marketplace {
+/* .marketplace {
 
 }
 
@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
-}
+} */
 
 .promptcard {
   aspect-ratio: 240 / 160;
