@@ -1,0 +1,513 @@
+::-webkit-scrollbar{
+    display: none;
+}
+h2{
+    font-family: Arial, Helvetica, serif;
+    background: linear-gradient(to right, #f36e21, #c9ff08, #23cfaa, #449cee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    word-spacing: auto;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+h1{
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+a{
+    border: 1px solid white;
+    padding: 0.5rem;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.hero-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.hero-left span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+}
+
+.hero-left span .findPrompt{
+    background-color: white;
+    color: black;
+}
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured .browse-market{
+    width: 40%;
+    display: flex;
+    position: relative;
+    left: 30%;
+    font-size: 1.2rem;
+}
+.featured-logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.featured-logo .featured-logo-image{
+    height: 1rem;
+    width: 6rem;
+    margin-bottom: 0.5rem;
+}
+.featured-logo-image img{
+    height: 100%;
+    width: 100%;
+    filter: invert(50%) brightness(120%);
+}
+.featured-prompt a{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.featuredprompt-text{
+    display: flex;
+    justify-self: start;
+    align-self: start;
+    padding: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.prompts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.hero-prompt img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.prompt{
+    background-color: rgb(54, 64, 88);
+    height: 30vh;
+    width: 15vh;
+    border-radius: 5px;
+}
+.prompt img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.ai-tag1{
+    z-index: 1;
+    position: relative;
+    top: -79%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.ai-tag{
+    z-index: 1;
+    position: relative;
+    top: -96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nameTag1{
+    z-index: 1;
+    position: relative;
+    top: -30%;
+}
+.nameTag{
+    z-index: 1;
+    position: relative;
+    top: -28%;
+}
+.ai-tag h6,  .nameTag h6{
+    font-size: 0.9rem
+}
+.ai-tag span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    gap: 0.5rem;
+    width: 90%;
+    background-color: rgb(22, 22, 22);
+}
+.ai-tag1 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    gap: 0.5rem;
+    width: 40%;
+    background-color: rgb(22, 22, 22);
+}
+.nameTag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    gap: 0.5rem;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.nameTag1{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    height: 8vh;
+    text-align: left;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.ai-tag span img{
+    width: 20%;
+    height: 50%;
+}
+.ai-tag1 span img{
+    width: 15%;
+    height: 40%;
+}
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right .hero-prompt{
+    display: none;
+}
+.featured a{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.about span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 0.4rem;
+    align-items: center;
+}
+.about span h3, .about span h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.prompt-market{
+    margin-top: 3rem;
+}
+.promptmarket-text h1{
+    font-size: 1rem;
+}
+.sell-prompt h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.sell-prompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.sell-prompt a{
+    width: 30%;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.market{
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.image-prompt span h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.image-prompt span h3{
+    font-size: 2rem;
+    margin-top: 0;
+}
+.otherpages a, .best-prompts a{
+    border: none;
+    font-size: 1rem;
+}
+.best-prompts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.search{
+    width: 20%;
+    margin-left: 0%;
+}
+header .navlinks a{
+    border: none;
+    font-size: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+.logo{
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.hero-banner{
+    height: 15vh;
+    width: 100%;
+}
+.hero-banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-image{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+    position: relative;
+    left: 1%;
+    z-index: 1;
+    margin-top: -4rem;
+}
+.profile-image img{
+    height: 100%;
+    width: 100%;
+    border-radius:50% ;
+}
+.profile-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 2%;
+}
+.profile-buttons a{
+    font-size: 0.9rem;
+    background-color: white;
+    color: black;
+    width: 8rem;
+    height: 2rem;
+    padding-top: 0.3rem;
+    text-align: center;
+}
+.profile-name{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+}
+.profile-description{
+    width: 100%;
+    margin-top: -1rem;
+}
+.profile-description p{
+    text-align: justify;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+}
+.profile-description p h5{
+    font-weight: 700;
+    margin-left: 1%;
+}
+.profile-description span p h5{
+    margin-right: 0.5rem;
+}
+.profile-description span{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.profile-description span h6{
+    background-color: rgba(116, 116, 116, 0.507);
+    padding: 0.3rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.market-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-market{
+    width: 15rem;
+    font-size: 1.2rem; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: white;
+    color: black;
+}
+@media screen and (min-width: 876.5px) {
+    header .logo-container{
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+    }
+    header .search{
+        margin-left: 5%;
+    }
+    .hero-left span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-left span a{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .body-container .market{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .image-prompt span{
+        display: flex;
+        flex-direction: row;
+    }
+    .body-container .featured-prompt a{
+        display: flex;
+        align-self: center;
+        position: relative;
+        left:30%;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .hero-left h2, .hero-left h3{
+        text-align: start;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .hero-right{
+        width: 60%;
+        display: flex;
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-right .hero-prompt{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-left{
+        display: flex;
+        width: 60%;
+        margin-top: -5rem;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .hero-promptcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hero-promptcontainer .hero-prompt{
+        height: 22vh;
+        width: 45%;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+        background-color: rgb(74, 73, 100);
+    }
+    .hero-prompt img{
+        width: 100%;
+        height: 100%;
+    }
+}

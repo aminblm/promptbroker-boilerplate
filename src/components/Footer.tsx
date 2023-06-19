@@ -10,7 +10,26 @@ export default function Footer() {
         <span>{new Date().getFullYear()}</span>
       </p>
       <div className="otherpages">
-        <Link href=""></Link>
+        <a href="">FAQ</a>
+        <a href="">Contact</a>
+        <a href="">Changelog</a>
+        <a href="">Blog</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+      </div>
+      <div className="image">
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+      <div className="best-prompts">
+        <a href="">Best AI Prompts</a>
+        <a href="">Best Midjourney V5 Prompts</a>
+        <a href="">Best Midjourney Prompts</a>
+        <a href="">Best ChatGPT Prompts</a>
+        <a href="">Best DALL-E Prompts</a>
+        <a href="">Best Stable Diffusion Prompts</a>
+        <a href="">Best GPT-4 Prompts</a>
+        <a href="">Best GPT-3 Prompts</a>
       </div>
     </footer>
   )
