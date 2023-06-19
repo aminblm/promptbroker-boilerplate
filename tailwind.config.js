@@ -15,14 +15,17 @@ module.exports = {
       colors: {
         "pbr-black": "#050308",
         "pbr-darkpurple": "#222236",
-        "pbr-purple": "#454566"
+        "pbr-purple": "#454566",
+       
       },
       fontFamily: {
         "pbr": ["Finlandica"]
       },
       aspectRatio: {
         '560/315': "560 / 315"
-      }
+      },
+
+      
     },
   },
   plugins: [],
