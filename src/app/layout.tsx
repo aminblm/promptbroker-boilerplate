@@ -33,11 +33,11 @@ export default function RootLayout({
     <html lang="en">
       
       <body className="center">
-        {/* <Header /> */}
+        <Header />
         <main>
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )
