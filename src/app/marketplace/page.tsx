@@ -1,4 +1,3 @@
-
 "use client"
 
 import PromptCard from "@/components/PromptCard"
@@ -9,13 +8,12 @@ import Sidebar from "@/components/marketplace/sidebar"
 import TopBar from "@/components/marketplace/topBar"
 import CardProduct from "@/components/marketplace/cardProduct"
 
-
 // export const metadata = {
 //   title: "Marketplace"
 // }
 
 export default function Marketplace() {
-  const [prompts, setPrompts] = useState<iPrompt[]>([])
+  const [prompts, setPrompts] = useState<iPrompt[]>([]);
 
   const [sort, setSort] = useState('')
   const [time, setTime] = useState('')
@@ -45,8 +43,7 @@ export default function Marketplace() {
   }
 
   useEffect(() => {
-    setPrompts(mockPrompts)
-
+    setPrompts(mockPrompts);
     return () => {}
   })
   return (    
