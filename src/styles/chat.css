@@ -1,0 +1,233 @@
+
+.chat-main-empty {
+    @apply flex flex-col h-[30rem] justify-center items-center
+}
+
+.chat-main-empty h2 {
+    text-align: center!important;
+}
+
+.profile-picture-wrapper img {
+    @apply w-12 h-12 rounded-full
+}
+
+.wrapper{
+    flex: 1;
+    background-color:#222236;
+    border-top: 2px solid #393954;
+    /* height: calc(100% - 64px)!important; */
+    padding: 1em;
+    margin: 0 -1em;
+}
+
+.sidebar {
+    border-right: 2px solid #393954;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 1em;
+    margin: -1em -1em;
+}
+
+.sidebar-border-bottom {
+    border-bottom: 2px solid #393954;
+    /* padding: .5em; */
+    margin: 0 -1em;
+
+}
+
+.conversation-inner-wrapper {
+    @apply flex items-center gap-4 sticky top-0 left-0 z-10 py-2
+
+}
+
+.top{
+    @apply flex items-center
+
+}
+
+.timestamp{
+    @apply absolute right-0
+}
+
+.chat-user, .last-message {
+    text-align: left!important;
+}
+
+.conversation-outer-wrapper {
+    cursor: pointer;
+    padding: 0 1em;
+
+}
+
+.conversation-outer-wrapper:hover{
+    background-color: #393954!important; 
+}
+
+
+/* ---------------------------Message pane-------------------------- */
+
+.message-pane-main {
+    @apply flex flex-1 flex-col h-full;
+}
+
+.chat-header {
+   @apply h-16 p-8 flex relative items-center;
+   box-shadow: 0 2px 3px 0 rgb(0 0 0 / 40%);
+   padding: 0em 0em;
+   margin: -1em -1em;
+   justify-content: space-between;
+}
+
+.chat-header-left {
+   @apply h-full relative flex items-center
+}
+
+.chat-header-back-arrow {
+    @apply mr-1 h-8 pl-2 cursor-pointer;
+    filter: invert(1);
+}
+
+.chat-header-profile {
+    @apply h-16 p-4 flex relative items-center;
+}
+
+.chat-header-profile img{
+    @apply w-12 h-12 rounded-full mr-4;
+    cursor: pointer; 
+}
+
+.chat-header-username{ 
+    display: inline-block;
+    font-weight: 700;
+}
+.chat-header-info {
+    @apply absolute right-0 h-8 pr-2 cursor-pointer;
+    filter: invert(1);
+
+}
+
+/* --------------------chat page responsive message bubble ------------------- */
+
+.messages-main-wrapper{
+    @apply flex flex-1 flex-col-reverse py-2 px-4;
+    @apply overflow-y-auto overflow-x-hidden relative;
+    margin: 0em -1em;
+}
+
+
+.message {
+    @apply w-full
+
+}
+
+.message-bubble {
+    @apply bg-[#393954] rounded-2xl max-w-[256px] py-2 px-4;
+    @apply my-2 mx-0 text-left inline-block relative whitespace-pre-wrap;
+    animation: scale-easeOutElastic 2s;
+    word-wrap: break-word;
+}
+
+.message-timestamp-wrapper {
+    float: right;
+    margin-left: 4px;
+}
+
+.message-timestamp {
+    font-size: 8px;
+    opacity: .85;
+    /* margin-left: 4px; */
+
+}
+
+.date-separator{
+    text-align: center;
+    padding: 16px 0;
+}
+
+.date-separator span {
+    background-color: #fff;
+    color: #222236;
+    padding: 4px 8px;
+    border-radius: 8px;
+    opacity: .85;
+    font-size: 12px;
+}
+
+.sent-message .message-bubble{
+    @apply bg-[green]
+}
+
+.sent-message {
+    @apply text-right;
+}
+
+/* ----------------------- message box ------------------------ */
+.message-box-main{
+    margin: 0em -1em;
+    @apply h-32 flex flex-col relative border-t-[1px] border-[#393954];
+}
+
+.message-box{
+    @apply flex-1 p-1
+}
+
+.message-box textarea {
+    @apply h-full whitespace-normal	rounded;
+
+    @apply w-full leading-5 relative inline-flex z-[1] flex-initial select-auto min-h-0;
+    @apply align-middle break-normal m-0 no-underline bg-transparent border-0 cursor-text py-2 px-4;
+    @apply resize-none text-white bg-[#454566];
+    
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 1px rgb(60 66 87 / 16%), 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 0 0 transparent;
+    transition: background-color .24s,box-shadow .24s;
+    transition-property: background-color,box-shadow;
+    transition-duration: .24s,.24s;
+    transition-timing-function: ease,ease;
+    transition-delay: 0s,0s;
+}
+
+/* -----------------------------message-box icons --------------------- */
+.message-icons-main {
+    @apply flex h-12 items-center py-0 px-4 justify-between border-t-[1px] border-[#393954] border-solid;
+}
+.message-icons {
+    display: block;
+}
+
+.icon {
+    @apply inline-block cursor-pointer ml-4 opacity-80 h-[30px] duration-[.3s];
+    color: white!important;
+
+}
+
+.icon input {
+    @apply hidden
+}
+
+.icon label {
+    @apply cursor-pointer;
+    
+}
+
+.icon img {
+    @apply h-full;
+    filter: invert(1);
+
+}
+
+.read-status-icon{
+    height: 14px;
+    position: relative;
+    top: 4px;
+    margin-left: 4px;
+    display: inline-block;
+
+}
+
+@media screen and (min-width: 1000px) { 
+    .last-message{
+        color: red;
+
+    }
+}
