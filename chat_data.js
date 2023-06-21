@@ -15,10 +15,11 @@ let chats  = [
     },
     {   "id": 3,
         "user": "@7cloud",
-        "last_message": "lorem ipsum dolor sit amet",
+        "last_message": "test lorem ipsum dolor sit amet",
         "timestamp": "3 minutes ago",
         "image": "https://firebasestorage.googleapis.com/v0/b/promptbase.appspot.com/o/DALLE_IMAGES%2FSUUXdtiIyIc8XKWDYL9noDx3GG73%2Fresized%2F1679531684727_100x100.webp?alt=media&token=b7478fe8-40ae-454f-b777-c79aa425fcb3"
-    },  
+    }, 
+    
 ]
 
 let messages = [
