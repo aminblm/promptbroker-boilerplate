@@ -35,6 +35,7 @@ export default function RootLayout({
       <body className="center">
         <Header />
         <main>
+        
           {children}
         </main>
         <Footer />
