@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('../styles/header.css');
-@import url('../styles/footer.css');
-@import url('../styles/chat.css');
-@import url('../styles/marketplace.css');
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("../styles/header.css");
+@import url("../styles/footer.css");
+@import url("../styles/chat.css");
+@import url("../styles/marketplace.css");
 
 @tailwind base;
 @tailwind components;
@@ -23,7 +23,7 @@
 }
 
 body {
-  @apply font-pbr bg-pbr-darkpurple text-white p-4;
+  @apply font-pbr bg-pbr-darkpurple text-white py-2 px-3;
 }
 
 .center {
@@ -44,7 +44,7 @@ h3 {
 }
 
 main {
-  @apply py-4;
+  @apply py-5;
 }
 
 .gradient-text {
@@ -53,4 +53,190 @@ main {
 
 .terms {
   @apply max-w-[872px] mx-auto;
+}
+
+.dropdown {
+  @apply flex flex-col justify-start rounded-md cursor-pointer;
+}
+.dropdown-header {
+  @apply w-full p-2 rounded-md flex  bg-pbr-purple text-lg relative mb-5;
+}
+.dropdown-content {
+  @apply w-full text-white  bg-pbr-darkpurple shadow-lg flex justify-start items-start  left-0  shadow-2xl p-3 mb-2;
+}
+.dropdown-header-content {
+  @apply flex justify-center items-center mr-3;
+}
+.caret-down {
+  @apply transform rotate-90;
+}
+.title {
+  @apply font-semibold mx-[-5px];
+}
+.caret {
+  @apply ml-1 font-bold text-xl mr-3;
+}
+
+.list {
+  @apply list-disc bg-yellow-600;
+}
+
+.blog-card {
+  @apply relative rounded-t-lg w-fit cursor-pointer hover:transform hover:-translate-y-1.5 transition duration-700 ease-in-out;
+}
+
+.blog-card-date {
+  @apply absolute top-1 ml-2 bg-pbr-purple rounded text-[13px] mt-1 p-0.5;
+}
+
+.blog-card-title {
+  @apply bg-black w-[300px] left-2 text-sm h-9 flex justify-start items-center pl-2.5 rounded-b-md;
+}
+
+.active {
+  @apply text-black border-b-2 border-b-blue-500 h-full font-medium bg-gray-300 bg-gray-100 active:transition delay-150 ease-in-out duration-700;
+}
+
+.hide {
+  @apply hidden;
+}
+
+@media screen and (max-width: 1300px) {
+  .faq {
+    @apply ml-[180px] w-[650px];
+  }
+  .changelog {
+    @apply ml-[180px] w-[650px];
+  }
+  .blog {
+    @apply ml-[180px] w-[650px];
+  }
+  .privacy {
+    @apply ml-[180px] w-[650px];
+  }
+  .terms {
+    @apply ml-[180px] w-[650px];
+  }
+}
+@media screen and (max-width: 1100px) {
+  .faq {
+    @apply ml-[180px] w-fit;
+  }
+
+  .changelog {
+    @apply ml-[180px] w-fit;
+  }
+  .blog {
+    @apply ml-[180px] w-fit;
+  }
+  .privacy {
+    @apply ml-[180px] w-fit;
+  }
+  .terms {
+    @apply ml-[180px] w-fit;
+  }
+}
+
+.form-container svg {
+  @apply text-blue-700;
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    @apply ml-[1px] w-fit;
+  }
+  .changelog {
+    @apply ml-[1px] w-fit;
+  }
+  .blog {
+    @apply ml-[1px] w-fit;
+  }
+  .privacy {
+    @apply ml-[1px] w-fit;
+  }
+  .terms {
+    @apply ml-[1px] w-fit;
+  }
+
+  .sell {
+    @apply mx-[10px];
+  }
+  .progress-bar {
+    @apply w-[70%];
+  }
+  .sell-content {
+    @apply flex flex-col w-full;
+  }
+
+  .sell-prompt {
+    @apply w-full flex flex-col justify-center items-center text-center;
+  }
+
+  .about-prompt-video {
+    @apply w-full;
+  }
+
+  .formdata {
+    @apply w-full flex flex-col justify-center items-center;
+  }
+
+  .formdata-info {
+    @apply w-full;
+  }
+  .hero-img {
+    @apply flex justify-center items-center mt-10;
+  }
+
+  .sign-center {
+    @apply text-center;
+  }
+  .prompt-details {
+    @apply w-full;
+  }
+
+  .prompt-details-heading {
+    @apply flex flex-col justify-center items-center text-center;
+  }
+
+  .prompt-file {
+    @apply w-full;
+  }
+
+  .prompt-center {
+    @apply mx-auto;
+  }
+  .completion {
+    @apply text-center;
+  }
+
+  .chatgpt {
+    @apply text-center;
+  }
+
+  .validate {
+    @apply w-[20%];
+  }
+
+  .completion-gpt button {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .get-paid-full {
+    @apply w-full;
+  }
+  .get-paid {
+    @apply flex flex-col items-center justify-center text-center;
+  }
+
+  .connect-bank-btn {
+    @apply mx-auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog {
+    @apply ml-[1px] w-fit;
+  }
+  .blogcards {
+    @apply flex flex-col items-start;
+  }
 }
