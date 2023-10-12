@@ -35,14 +35,14 @@ export default function Home() {
           <CustomButton />
         </div>
 
-        <EarnFromPrompt />
+        <GenerateImage />
         <div>
           <NewestMidJourneyPrompt />
           <NewestGptPrompt />
           <CustomButton />
         </div>
 
-        <GenerateImage />
+        <EarnFromPrompt />
         <div>
           <NewestDALLEPrompt />
           <NewestStableDiffusionPrompt />
